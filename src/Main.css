@@ -1,0 +1,64 @@
+.container {
+    width: 70%;
+    margin: auto;
+    color: white;
+    font-size: 30px;
+    height: 100%;
+}
+
+.workButton {
+    display:inline-block;
+    padding:0.5em 1.5em;
+    border:2px solid #2BD9FF;
+    margin:0 5px 0.3em 0;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    color:#2BD9FF;
+    text-align:center;
+    transition: all 0.2s;
+    background-color: #2A2A2A;
+    font-size: 24px;
+    margin-right: 5%;
+    cursor: pointer;
+}
+
+a.workButton:hover {
+    background-color: #2BD9FF;
+    color: #2A2A2A;
+}
+
+.inTouchButton {
+    display:inline-block;
+    padding:0.5em 1.5em;
+    border:2px solid #2BD9FF;
+    margin:0 5px 0.3em 0;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    color:#2A2A2A;
+    text-align:center;
+    transition: all 0.2s;
+    background-color: #2BD9FF;
+    font-size: 24px;
+    margin-right: 5%;
+    cursor: pointer;
+}
+
+a.inTouchButton:hover {
+    background-color: #2A2A2A;
+    color: #2BD9FF;
+}
+
+ul.technology {
+    columns: 2;
+}
+
+.homepage {
+    animation: spin 5s linear infinite;
+}
+
+@keyframes homemove {
+    from {left: 0px;}
+    top {left: 200px;}
+}

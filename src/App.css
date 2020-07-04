@@ -1,0 +1,12 @@
+@font-face {
+  font-family: Nunito;
+  src: url(./Nunito_Sans/NunitoSans-Regular.ttf)
+}
+
+.App {
+  background-color: #2A2A2A;
+  width: 100%;
+  min-height: 100vh;
+  margin: auto;
+  font-family: Nunito;
+}

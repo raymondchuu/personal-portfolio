@@ -1,0 +1,50 @@
+.navbar {
+    width: 100%;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    height: 60px;
+    background-color: #212121;
+    color: #DEDEDE;
+    transition: top 0.5s ease-in-out;
+    display: inline-block;
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.2);
+}
+
+.hide {
+    top: -80px;
+}
+
+ul.navlinks {
+    display: inline-flex;
+    flex-direction: row;
+    flex-flow: nowrap;
+    white-space: nowrap;
+    margin-inline-end: 100px;
+    margin-top: 20px;
+    list-style-type: none;
+}
+
+li {
+    width: 70%;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+  
+a {
+    flex-direction: row;
+    justify-content: space-evenly;
+    display: flex;
+    color: #DEDEDE;
+    padding-right: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #2BD9FF;
+}
+
+
+
