@@ -1,8 +1,9 @@
-import React, { Component, useState, useEffect } from "react";
+import React from "react";
 import '../Navbar.css';
-import { IoIosMail, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io';
+import { IoIosMail, IoLogoGithub, IoLogoLinkedin, IoIosLink } from 'react-icons/io';
 import { Spring } from 'react-spring/renderprops';
 import { Link, animateScroll as scroll } from 'react-scroll';
+import ToggleButton from './ToggleButton';
 
 class Navbar extends React.Component {
   constructor(props){
@@ -19,9 +20,9 @@ class Navbar extends React.Component {
     scroll.scrollToTop();
   }
 
-  handleScroll(){
+   handleScroll(){
     let {visible} = this.state
-    window.scrollY > this.prev?
+    window.scrollY > this.prev ?
     visible && this.setState({visible: false})
     :
     !visible && this.setState({visible: true})
@@ -37,12 +38,15 @@ class Navbar extends React.Component {
   componentWillUnmount(){
     this.setState({visible: false})
     window.removeEventListener('scroll',this.handleScroll);
-  }
+  } 
 
   render(){
-    let visibleClass = this.state.visible ? "" : "hide"
+    let visibleTop = this.state.visible ? "" : "hide"
     return (
-      <div className={"navbar "+ visibleClass}>
+      <nav className={'navbar ' + visibleTop}>
+        <div className="toggle">
+          <ToggleButton toggle={this.props.toggle} />
+        </div>
         <div style={{float: 'right'}}>
           <ul className="navlinks">
             <Spring
@@ -52,7 +56,6 @@ class Navbar extends React.Component {
             >
               {props => (
                 <li style={props}><Link
-                  to='/'
                   onClick={this.scrollToTop}
                   ignoreCancelEvents={true}
                   spy={true}
@@ -67,8 +70,11 @@ class Navbar extends React.Component {
               config={{delay: 1000/7 + 500}}
             >
               {props => (
-                <li style={props}><Link 
+
+                <li style={props}>
+                  <Link 
                   to="about"
+                  href='/about'
                   ignoreCancelEvents={true}
                   spy={true}
                   smooth={true}
@@ -144,7 +150,7 @@ class Navbar extends React.Component {
             </Spring>
           </ul>
           </div>
-      </div>
+      </nav>
     );
   }
 }

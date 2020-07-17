@@ -32,14 +32,14 @@ class Preloader extends React.Component {
         super(props);
 
         this.state = {
-            open: false
+            open: true
         }
     }
 
     componentDidMount() {
         setTimeout(() => {
             this.setState({open: true})
-        }, 5000)
+        }, 4500)
     }
 
     render() {
@@ -48,7 +48,7 @@ class Preloader extends React.Component {
                 <Spring
                     from={{opacity: 1}}
                     to={{opacity: 0}}
-                    config={{delay: 3500, duration: 1000}}
+                    config={{delay: 3500, duration: 500}}
                 >
                     {props => (
                         <animated.div style={props}>

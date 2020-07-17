@@ -13,13 +13,14 @@ class App extends React.Component {
     super(props);
     this.myRef = React.createRef();
   }
+  
   componentDidMount() {
     this.myRef.current.scrollTo(0, 0);
-  }
+  } 
 
   render() {
     return (
-      <div className="App" ref={this.myRef}>
+      <div className="App" ref={this.myRef} id="/">
       <Router>
         <Switch>
         <Route path="/resume">
