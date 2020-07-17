@@ -32,7 +32,7 @@ class Preloader extends React.Component {
         super(props);
 
         this.state = {
-            open: true
+            open: false
         }
     }
 
