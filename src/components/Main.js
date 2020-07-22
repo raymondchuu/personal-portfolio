@@ -28,7 +28,7 @@ const styles = {
     },
 
     aboutMe: {
-        marginBottom: '30%',
+        marginBottom: '20%',
         paddingTop: '10%',
         width: '100%',
     },
