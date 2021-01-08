@@ -6,6 +6,9 @@ import barbershop from '../Media/barbershopedit.png';
 import contactmanager from '../Media/contactmanager.png';
 import tictactoe from '../Media/tictactoe.png';
 import playlistGenerator from '../Media/playlistgenerator.png';
+import chessGameplay from '../Media/chessGameplay.png';
+import chirperImage from '../Media/chirperMobile.png';
+import goldnhour from '../Media/goldnhour.png';
 import Navbar from './Navbar';
 import Sidebar from './Sidebar';
 import { animateScroll as scroll } from 'react-scroll';
@@ -119,8 +122,6 @@ const Main = () => {
                     >
                         {(props) => (
                             <animated.div style={props}>
-
-
                                 <div style={styles.aboutMe} id='about'>
                                     <div style={{ width: '100%', borderBottom: '1px solid white', paddingBottom: '0', marginBottom: '5%',}}>
                                         <div style={styles.subtitles}>About Me</div>
@@ -173,6 +174,39 @@ const Main = () => {
                                 <div style={{width: '100%', borderBottom: '1px solid white', paddingBottom: '0', marginBottom: '5%',}}>
                                     <div style={styles.subtitles}>My Projects</div>
                                 </div>
+
+                                <div className="project-block">
+                                    <div className="left-column-image">
+                                        <div className="project-image-container">
+                                            <a href="https://playchessonline.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+                                                <img src={chessGameplay} className="image" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div className="right-column-text">
+                                        <p>Online Multiplayer Chess</p>
+                                            <div className="text-right">
+                                                This game was designed so that clients can play chess with friends online in the comfort of their own homes.
+                                                ReactJs was implemented in the front end that communicated with a back end server using NodeJS, Express, and SocketIO.
+                                            </div>
+                                            <a href="https://github.com/raymondchuu/multiplayer-chess" target="_blank" rel="noopener noreferrer" style={{float: 'right', marginTop: '5%'}}><IoLogoGithub style={{ height: '25px', width: '25px',}}/></a>                                        
+                                    </div>
+                                </div>
+                                <div className="project-block">
+                                <div className="right-column-image">
+                                        <a href="https://chirper1.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+                                            <img src={chirperImage} className="image" width="100%" height="100%"/>
+                                        </a>
+                                    </div>
+                                    <div className="left-column-text">
+                                        <p>Chirper - Twitter Clone</p>
+                                            <div className="text-left">
+                                                Web application that generates a playlist by entering names of artists and adds the playlist on the user's Spotify account.
+                                                Implemented React in the front end which communicates to the spotify API backend.
+                                            </div>
+                                            <a className="spotifygithubicon" href="https://github.com/raymondchuu/chirper" target="_blank" rel="noopener noreferrer" style={{float: 'left', marginTop: '5%'}}><IoLogoGithub style={{ height: '25px', width: '25px',}}/></a>                                        
+                                        </div>
+                                </div>
                                 <div className="project-block">
                                     <div className="left-column-image">
                                         <div>
@@ -206,7 +240,7 @@ const Main = () => {
                                             <a className="spotifygithubicon" href="https://github.com/raymondchuu/spotify-playlist-generator" target="_blank" rel="noopener noreferrer" style={{float: 'left', marginTop: '5%'}}><IoLogoGithub style={{ height: '25px', width: '25px',}}/></a>                                        
                                         </div>
                                 </div>
-                                <div className="project-block">
+                                 <div className="project-block">
                                     <div className="left-column-image">
                                         <div>
                                             <a href="https://github.com/raymondchuu/Contact-Manager-System" target="_blank" rel="noopener noreferrer">
@@ -238,13 +272,53 @@ const Main = () => {
                                         <a href="https://github.com/raymondchuu/TicTacToe" target="_blank" rel="noopener noreferrer" style={{float: 'left', marginTop: '5%'}}><IoLogoGithub style={{ height: '25px', width: '25px'}}/></a>
                                     </div>
 
-                                </div>
+                                </div> 
+                                <p style={{textAlign: 'center', fontSize: '30px', margin: '0'}}>See more of my work <a href="https://github.com/raymondchuu" style={{color: '#2BD9FF'}}>here!</a></p>
                                 </div>
                             </animated.div>
                         )}
                     </Spring>
                 )}
                 </VisibilitySensor>
+
+{/*                 <VisibilitySensor partialVisibility>
+                {({isVisible}) => (
+                    <Spring
+                        to={{
+                            opacity: isVisible ? 1 : 0,
+                            //marginLeft: isVisible ? '0px' : '-30px',
+                        }}
+                        config={{duration: 2000}}
+                    >
+                        {(props) => (
+                            <animated.div style={props}>
+                                <div style={{width: '100%', borderBottom: '1px solid white', paddingBottom: '0', marginBottom: '0',}}>
+                                    <div style={styles.subtitles}>Other Work</div>
+                                </div>
+                                <div style={styles.contact} id="other-work">
+                                    <div className="other-work-container">
+                                        <div className="other-work-row">
+                                            <div>
+                                                <span>goldnhour</span> <br/>
+                                                <img src={goldnhour} className="other-work-img" />
+                                            </div>
+                                            <div>
+                                                <span>TicTacToe</span>
+                                                <img src={tictactoe} className="other-work-img" />
+                                            </div>
+                                        </div>
+                                        <div className="other-work-row">
+                                            <img src={contactmanager} className="other-work-img" />
+                                            <img src={tictactoe} className="other-work-img" />
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </animated.div>
+                        )}
+                    </Spring>
+                )}
+                </VisibilitySensor> */}
 
                 <VisibilitySensor partialVisibility>
                 {({isVisible}) => (

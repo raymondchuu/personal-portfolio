@@ -127,7 +127,7 @@ class Navbar extends React.Component {
               config={{delay: 5000/7 + 500}}
             >
               {props => (
-            <li style={props}><a href="mailto:raymondchu1996@gmail.com"><IoIosMail style={{height: '20px', width: '30px'}} /></a></li>
+            <li style={props}><a href="mailto:r3chu@uwaterloo.ca"><IoIosMail style={{height: '20px', width: '30px'}} /></a></li>
             )}
             </Spring>
             <Spring
