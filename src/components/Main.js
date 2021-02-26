@@ -95,7 +95,7 @@ const Main = () => {
                             marginLeft: '0px'
                         }}
                         delay={1000}
-                        config={{duration: 1000}}
+                        config={{duration: 1500}}
                     >
                         {(props) => (
                             <animated.div style={props}>
@@ -118,7 +118,7 @@ const Main = () => {
                             opacity: isVisible ? 1 : 0,
                             //marginLeft: isVisible ? '0px' : '-30px',
                         }}
-                        config={{duration: 2000}}
+                        config={{duration: 1500}}
                     >
                         {(props) => (
                             <animated.div style={props}>
@@ -138,16 +138,28 @@ const Main = () => {
                                         <div className="profile-text">
                                             <p style={{marginTop: 0}}>Hey! My name is Raymond and I'm currently studying software development in Toronto, Ontario!</p>
                                             <p>
+                                                I graduated the University
+                                                of Waterloo with a Bachelor's in Science, specifically in biomedical sciences.
+                                                During my time as an undergraduate, I had a hard time finding passion in what I
+                                                was studying. Since then, I have discovered the tech industry and I have been
+                                                learning and developing my skills with a passion every single day.
+                                            </p>
+                                            <p>
+                                                Shortly after graduating the University of Waterloo, I decided to attend Seneca College at their school of information and communications technology to start my journey into software development.
                                                 I enjoy programming games and developing meaningful web applications, but passion lies in web development.
-                                                Shorty after graduating the University of Waterloo, I decided to attend Seneca College at their school of information and communications technology to start my journey into software development.
                                             </p>
                                             <p>Currently I am looking for internship opportunities for summer of 2021. Here are a couple of technologies that I have experience using:</p>
                                             <ul className="technology">
-                                                <li>HTML & CSS</li>
-                                                <li>JavaScript</li>
-                                                <li>React</li>
-                                                <li>Express.js</li>
                                                 <li>C/C++</li>
+                                                <li>JavaScript</li>
+                                                <li>Java</li>
+                                                <li>SQL</li>
+                                                <li>Linux/Unix</li>
+                                                <li>ReactJS</li>
+                                                <li>ExpressJS</li>
+                                                <li>HTML & CSS</li>
+                                                <li>PostgreSQL</li>
+                                                <li>MongoDB</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -166,13 +178,13 @@ const Main = () => {
                             opacity: isVisible ? 1 : 0,
                             //marginLeft: isVisible ? '0px' : '-30px',
                         }}
-                        config={{duration: 2000}}
+                        config={{duration: 1500}}
                     >
                         {(props) => (
                             <animated.div style={props}>
                                 <div id="experience" style={styles.experience} >
                                 <div style={{width: '100%', borderBottom: '1px solid white', paddingBottom: '0', marginBottom: '5%',}}>
-                                    <div style={styles.subtitles}>My Projects</div>
+                                    <div style={styles.subtitles}>My Work</div>
                                 </div>
 
                                 <div className="project-block">
@@ -201,8 +213,7 @@ const Main = () => {
                                     <div className="left-column-text">
                                         <p>Chirper - Twitter Clone</p>
                                             <div className="text-left">
-                                                Web application that generates a playlist by entering names of artists and adds the playlist on the user's Spotify account.
-                                                Implemented React in the front end which communicates to the spotify API backend.
+                                                A website that imitates the functionality of Twitter that's coded in ExpressJS and Express Handlebars. Client-sessions library was utilized to handle an authentication system and both MongoDB and PostgreSQL was used to handle storage of user accounts, as well as user chirps!
                                             </div>
                                             <a className="spotifygithubicon" href="https://github.com/raymondchuu/chirper" target="_blank" rel="noopener noreferrer" style={{float: 'left', marginTop: '5%'}}><IoLogoGithub style={{ height: '25px', width: '25px',}}/></a>                                        
                                         </div>
@@ -288,7 +299,7 @@ const Main = () => {
                             opacity: isVisible ? 1 : 0,
                             //marginLeft: isVisible ? '0px' : '-30px',
                         }}
-                        config={{duration: 2000}}
+                        config={{duration: 1500}}
                     >
                         {(props) => (
                             <animated.div style={props}>
@@ -327,7 +338,7 @@ const Main = () => {
                             opacity: isVisible ? 1 : 0,
                             //marginLeft: isVisible ? '0px' : '-30px',
                         }}
-                        config={{duration: 2000}}
+                        config={{duration: 1500}}
                     >
                         {(props) => (
                             <animated.div style={props}>
