@@ -148,7 +148,7 @@ const Main = () => {
                                                 Shortly after graduating the University of Waterloo, I decided to attend Seneca College at their school of information and communications technology to start my journey into software development.
                                                 I enjoy programming games and developing meaningful web applications, but passion lies in web development.
                                             </p>
-                                            <p>Currently I am looking for internship opportunities for summer of 2021. Here are a couple of technologies that I have experience using:</p>
+                                            <p>Currently I am looking for full time opportunities. Here are a couple of technologies that I have experience using:</p>
                                             <ul className="technology">
                                                 <li>C/C++</li>
                                                 <li>JavaScript</li>
@@ -347,7 +347,7 @@ const Main = () => {
                                         <div style={styles.subtitles}>Contact</div>
                                     </div>
                                     <p style={{fontSize: '64px', color: '#C7C7C7', fontWeight: 'bolder'}}>Let's Connect!</p>
-                                    <p>I am currently seeking internships for summer of 2021. Send me an email if you have any inquiries or opportunities!</p>
+                                    <p>I am currently seeking for full time positions. Send me an email if you have any inquiries or opportunities!</p>
                                     <a className="workButton" href="mailto:raymondchu1996@gmail.com">Get in touch</a>
                                 </div>
                             </animated.div>
