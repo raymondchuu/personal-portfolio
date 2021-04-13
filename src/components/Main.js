@@ -103,7 +103,7 @@ const Main = () => {
                                         <p><span style={{fontSize: '24px', color: '#2BD9FF'}}>Hi, my name is</span><br/>
                                         <span style={{fontSize: '64px', color: '#C7C7C7', fontWeight: 'bolder'}}>Raymond Chu</span> <br/>
                                         <span style={{fontSize: '64px', color: '#8C8C8C', fontWeight: 'bolder'}}>I like to build websites.</span><br/>
-                                        I'm a student studying software development with a passion for building websites, applications, and games. </p>
+                                        I'm a software developer with a passion for building websites, applications, and games. </p>
                                         <a className="workButton" href="https://www.github.com/raymondchuu?tab=repositories" target="_blank" rel="noopener noreferrer">View my work</a>
                                         <a className="inTouchButton" href="mailto:raymondchu1996@gmail.com">Get in touch</a>
                                 </div> 
@@ -138,11 +138,11 @@ const Main = () => {
                                         <div className="profile-text">
                                             <p style={{marginTop: 0}}>Hey! My name is Raymond and I'm currently studying software development in Toronto, Ontario!</p>
                                             <p>
-                                                I graduated the University
-                                                of Waterloo with a Bachelor's in Science, specifically in biomedical sciences.
-                                                During my time as an undergraduate, I had a hard time finding passion in what I
-                                                was studying. Since then, I have discovered the tech industry and I have been
-                                                learning and developing my skills with a passion every single day.
+                                                I am a scientist with a curiousity for technology. I was always 
+                                                fascinated in how technology can be implemented into our lives in so many different ways. 
+                                                Recently I decided to get up and stop watching the evolution of technology, and dive in to be apart of the change. 
+                                                I enrolled in many computer science courses and instantly fell in love with the field. 
+                                                Since discovering the tech industry, I have been learning and developing my skills with a passion every single day.
                                             </p>
                                             <p>
                                                 Shortly after graduating the University of Waterloo, I decided to attend Seneca College at their school of information and communications technology to start my journey into software development.
