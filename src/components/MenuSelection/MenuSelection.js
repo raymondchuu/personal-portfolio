@@ -18,6 +18,7 @@ const WORKEXPERIENCE = [
 ]
 
 const MenuSelection = () => {
+    const [selectedWork, setSelectedWork] = useState()
     return (
         <>
             <WorkSelection workplaces={WORKEXPERIENCE} />
