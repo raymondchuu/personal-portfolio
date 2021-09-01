@@ -8,6 +8,7 @@ import tictactoe from '../Media/tictactoe.png';
 import playlistGenerator from '../Media/playlistgenerator.png';
 import chessGameplay from '../Media/chessGameplay.png';
 import chirperImage from '../Media/chirperMobile.png';
+import MenuSelection from './MenuSelection/MenuSelection'
 import goldnhour from '../Media/goldnhour.png';
 import Navbar from './Navbar';
 import Sidebar from './Sidebar';
@@ -42,6 +43,11 @@ const styles = {
         display: 'table',
         paddingTop: '10%',
     },
+    work: {
+        marginBottom: '20%',
+        width: '100%',
+        paddingTop: '10%'
+    },
 
     contact: {
         marginTop: '15%',
@@ -70,7 +76,7 @@ const styles = {
 }
 
 const Main = () => {
-    const [toggle, setToggle] = useState(false);
+    const [toggle, setToggle] = useState(false);        
 
     const handleClick = () => {
         setToggle(true);
@@ -170,6 +176,31 @@ const Main = () => {
                 )}
                 </VisibilitySensor>
 
+
+                <VisibilitySensor partialVisibility>
+                {({isVisible}) => (
+                    <Spring
+                        to={{
+                            opacity: isVisible ? 1 : 0,
+                            //marginLeft: isVisible ? '0px' : '-30px',
+                        }}
+                        config={{duration: 1500}}
+                    >
+                        {(props) => (
+                            <animated.div style={props}>
+                                <div id="work" style={styles.work} >
+                                    <div style={{width: '100%', borderBottom: '1px solid white', paddingBottom: '0', marginBottom: '5%',}}>
+                                        <div style={styles.subtitles}>Where I've Worked</div>
+                                    </div>
+                                    <MenuSelection />
+                                
+                                </div>
+                            </animated.div>
+                        )}
+                    </Spring>
+                )}
+                </VisibilitySensor>
+
                 <VisibilitySensor partialVisibility>
                 {({isVisible}) => (
                     <Spring
@@ -184,7 +215,7 @@ const Main = () => {
                             <animated.div style={props}>
                                 <div id="experience" style={styles.experience} >
                                 <div style={{width: '100%', borderBottom: '1px solid white', paddingBottom: '0', marginBottom: '5%',}}>
-                                    <div style={styles.subtitles}>My Work</div>
+                                    <div style={styles.subtitles}>What I've Built</div>
                                 </div>
 
                                 <div className="project-block">

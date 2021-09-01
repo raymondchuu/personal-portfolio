@@ -89,6 +89,21 @@ class Navbar extends React.Component {
             >
               {props => (
                 <li style={props}><Link
+                  to="work"
+                  ignoreCancelEvents={true}
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                >Work</Link></li>
+              )}
+            </Spring>
+            <Spring
+              from={{opacity: 0}}
+              to={{opacity: 1}}
+              config={{delay: 2000/7 + 500}}
+            >
+              {props => (
+                <li style={props}><Link
                   to="experience"
                   ignoreCancelEvents={true}
                   spy={true}
