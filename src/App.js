@@ -27,9 +27,9 @@ class App extends React.Component {
             <Resume />
           </Route>
           <Route path="/">
-            {/* <Preloader> */}
+            <Preloader>
               <Main />
-            {/* </Preloader> */}
+            </Preloader>
           </Route>
         </Switch>
       </Router>
