@@ -46,7 +46,8 @@ const styles = {
     work: {
         marginBottom: '20%',
         width: '100%',
-        paddingTop: '10%'
+        paddingTop: '10%',
+        fontSize: '18px',
     },
 
     contact: {

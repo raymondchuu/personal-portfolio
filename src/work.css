@@ -1,0 +1,15 @@
+.workContainer {
+    display: flex;
+    flex-direction: row;
+    color: 'red';
+}
+
+.workLink {
+    color: #2BD9FF;
+}
+
+.workSelectionContainer {
+    width: 30%;
+    padding: 1rem;
+    font-size: 22px;
+}
